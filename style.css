@@ -1,0 +1,64 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+:root
+{
+    --primary-bg: rgb(213, 208, 208);
+    --card-bg: white;
+    --txt-color: black;
+}
+
+.dark
+{
+    --primary-bg: black;
+    --card-bg: rgb(59, 58, 58);
+    --txt-color: white;
+}
+
+.dark-btn
+{
+    text-decoration: none;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    color: var(--txt-color);
+}
+
+.container
+{
+    padding: 40px;
+    min-height: 100vh;
+    background: var(--primary-bg);
+}
+
+h1
+{
+    text-align: center;
+    color: var(--txt-color);
+}
+
+.big-box
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1.5em;
+}
+
+.box
+{
+    padding: 20px;
+    border-radius: 2em;
+    background: var(--card-bg);
+    color: var(--txt-color)
+}
+
+.box h2
+{
+    margin-bottom: 20px;
+}

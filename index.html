@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="#" class="dark-btn" onclick="themeChange()">Theme</a>
+    <div class="container">
+        <h1>Inside container</h1>
+        <div class="big-box">
+            <div class="box">
+                <h2>Waterfalls</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, doloremque quia! Consequatur
+                    obcaecati facilis amet sit nemo iusto quod reprehenderit.</p>
+            </div>
+            <div class="box">
+                <h2>Hills</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, doloremque quia! Consequatur
+                    obcaecati facilis amet sit nemo iusto quod reprehenderit.</p>
+            </div>
+            <div class="box">
+                <h2>Mountains</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, doloremque quia! Consequatur
+                    obcaecati facilis amet sit nemo iusto quod reprehenderit.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function themeChange()
+        {
+            const body = document.body.classList;
+            if(body.contains("dark"))
+                body.remove("dark")
+            else
+                body.add("dark");
+        }
+    </script>
+</body>
+
+</html>
